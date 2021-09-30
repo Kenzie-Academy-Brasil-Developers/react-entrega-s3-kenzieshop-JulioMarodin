@@ -1,0 +1,17 @@
+.div__header--container {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.div__header--box {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 10px;
+  align-items: center;
+}
+
+h3 {
+  display: flex;
+  align-items: flex-end;
+}
