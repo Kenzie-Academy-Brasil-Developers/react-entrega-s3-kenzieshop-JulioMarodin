@@ -11,9 +11,6 @@ const Cart = () => {
   }, 0);
   return (
     <div className="div__cart">
-      {cart.map((product) => (
-        <Product key={product.id} product={product} isRemovable />
-      ))}
       <div className="cart__orders">
         <div className="cart__orders--box">
           <p>Total: {`R$${total},00`}</p>
@@ -22,6 +19,9 @@ const Cart = () => {
           </h4>
         </div>
       </div>
+      {cart.map((product) => (
+        <Product key={product.id} product={product} isRemovable />
+      ))}
     </div>
   );
 };
